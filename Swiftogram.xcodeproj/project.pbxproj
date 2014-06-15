@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D02CC215194A0FD4007E01FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC214194A0FD4007E01FB /* main.swift */; };
+		D02CC21F194A1030007E01FB /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC21E194A1030007E01FB /* DataSet.swift */; };
+		D02CC221194A1047007E01FB /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC220194A1047007E01FB /* Axis.swift */; };
+		D02CC223194A1056007E01FB /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC222194A1056007E01FB /* DataItem.swift */; };
+		D02CC225194A1060007E01FB /* Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC224194A1060007E01FB /* Histogram.swift */; };
+		D02CC227194A1088007E01FB /* ChildCountFreqAnalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC226194A1088007E01FB /* ChildCountFreqAnalyst.swift */; };
+		D02CC229194A10A2007E01FB /* ChildrenPerStateAnalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC228194A10A2007E01FB /* ChildrenPerStateAnalyst.swift */; };
+		D02CC22B194A10C0007E01FB /* AxisLabeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC22A194A10C0007E01FB /* AxisLabeler.swift */; };
+		D02CC22D194A10CD007E01FB /* HistogramRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC22C194A10CD007E01FB /* HistogramRenderer.swift */; };
+		D02CC22F194A10DB007E01FB /* TextPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC22E194A10DB007E01FB /* TextPalette.swift */; };
+		D02CC231194A1F05007E01FB /* DataAnalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CC230194A1F05007E01FB /* DataAnalyst.swift */; };
+		D07EC67F194BFDCF009AB2B3 /* String+Repetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC67E194BFDCF009AB2B3 /* String+Repetition.swift */; };
+		D07EC681194D1285009AB2B3 /* HistogramLineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC680194D1285009AB2B3 /* HistogramLineRenderer.swift */; };
+		D07EC683194D151B009AB2B3 /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC682194D151B009AB2B3 /* RenderContext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D02CC20F194A0FD4007E01FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D02CC211194A0FD4007E01FB /* Swiftogram */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swiftogram; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02CC214194A0FD4007E01FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D02CC21E194A1030007E01FB /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		D02CC220194A1047007E01FB /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
+		D02CC222194A1056007E01FB /* DataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		D02CC224194A1060007E01FB /* Histogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
+		D02CC226194A1088007E01FB /* ChildCountFreqAnalyst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildCountFreqAnalyst.swift; sourceTree = "<group>"; };
+		D02CC228194A10A2007E01FB /* ChildrenPerStateAnalyst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildrenPerStateAnalyst.swift; sourceTree = "<group>"; };
+		D02CC22A194A10C0007E01FB /* AxisLabeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxisLabeler.swift; sourceTree = "<group>"; };
+		D02CC22C194A10CD007E01FB /* HistogramRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistogramRenderer.swift; sourceTree = "<group>"; };
+		D02CC22E194A10DB007E01FB /* TextPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPalette.swift; sourceTree = "<group>"; };
+		D02CC230194A1F05007E01FB /* DataAnalyst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAnalyst.swift; sourceTree = "<group>"; };
+		D07EC67E194BFDCF009AB2B3 /* String+Repetition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Repetition.swift"; sourceTree = "<group>"; };
+		D07EC680194D1285009AB2B3 /* HistogramLineRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistogramLineRenderer.swift; sourceTree = "<group>"; };
+		D07EC682194D151B009AB2B3 /* RenderContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderContext.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D02CC20E194A0FD4007E01FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D02CC208194A0FD4007E01FB = {
+			isa = PBXGroup;
+			children = (
+				D02CC213194A0FD4007E01FB /* Swiftogram */,
+				D02CC212194A0FD4007E01FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D02CC212194A0FD4007E01FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D02CC211194A0FD4007E01FB /* Swiftogram */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D02CC213194A0FD4007E01FB /* Swiftogram */ = {
+			isa = PBXGroup;
+			children = (
+				D02CC214194A0FD4007E01FB /* main.swift */,
+				D02CC21E194A1030007E01FB /* DataSet.swift */,
+				D02CC21B194A0FEA007E01FB /* Analysts */,
+				D02CC21C194A0FF1007E01FB /* Data Model */,
+				D02CC21D194A0FFD007E01FB /* Rendering */,
+			);
+			path = Swiftogram;
+			sourceTree = "<group>";
+		};
+		D02CC21B194A0FEA007E01FB /* Analysts */ = {
+			isa = PBXGroup;
+			children = (
+				D02CC226194A1088007E01FB /* ChildCountFreqAnalyst.swift */,
+				D02CC228194A10A2007E01FB /* ChildrenPerStateAnalyst.swift */,
+			);
+			name = Analysts;
+			sourceTree = "<group>";
+		};
+		D02CC21C194A0FF1007E01FB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D02CC220194A1047007E01FB /* Axis.swift */,
+				D02CC230194A1F05007E01FB /* DataAnalyst.swift */,
+				D02CC222194A1056007E01FB /* DataItem.swift */,
+				D02CC224194A1060007E01FB /* Histogram.swift */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		D02CC21D194A0FFD007E01FB /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				D02CC22A194A10C0007E01FB /* AxisLabeler.swift */,
+				D07EC680194D1285009AB2B3 /* HistogramLineRenderer.swift */,
+				D02CC22C194A10CD007E01FB /* HistogramRenderer.swift */,
+				D07EC682194D151B009AB2B3 /* RenderContext.swift */,
+				D07EC67E194BFDCF009AB2B3 /* String+Repetition.swift */,
+				D02CC22E194A10DB007E01FB /* TextPalette.swift */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D02CC210194A0FD4007E01FB /* Swiftogram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D02CC218194A0FD4007E01FB /* Build configuration list for PBXNativeTarget "Swiftogram" */;
+			buildPhases = (
+				D02CC20D194A0FD4007E01FB /* Sources */,
+				D02CC20E194A0FD4007E01FB /* Frameworks */,
+				D02CC20F194A0FD4007E01FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swiftogram;
+			productName = Swiftogram;
+			productReference = D02CC211194A0FD4007E01FB /* Swiftogram */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D02CC209194A0FD4007E01FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = iJoshSmith;
+				TargetAttributes = {
+					D02CC210194A0FD4007E01FB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = D02CC20C194A0FD4007E01FB /* Build configuration list for PBXProject "Swiftogram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D02CC208194A0FD4007E01FB;
+			productRefGroup = D02CC212194A0FD4007E01FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D02CC210194A0FD4007E01FB /* Swiftogram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D02CC20D194A0FD4007E01FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02CC231194A1F05007E01FB /* DataAnalyst.swift in Sources */,
+				D02CC22F194A10DB007E01FB /* TextPalette.swift in Sources */,
+				D02CC22B194A10C0007E01FB /* AxisLabeler.swift in Sources */,
+				D02CC21F194A1030007E01FB /* DataSet.swift in Sources */,
+				D02CC227194A1088007E01FB /* ChildCountFreqAnalyst.swift in Sources */,
+				D07EC681194D1285009AB2B3 /* HistogramLineRenderer.swift in Sources */,
+				D02CC225194A1060007E01FB /* Histogram.swift in Sources */,
+				D07EC683194D151B009AB2B3 /* RenderContext.swift in Sources */,
+				D02CC22D194A10CD007E01FB /* HistogramRenderer.swift in Sources */,
+				D02CC221194A1047007E01FB /* Axis.swift in Sources */,
+				D02CC223194A1056007E01FB /* DataItem.swift in Sources */,
+				D02CC215194A0FD4007E01FB /* main.swift in Sources */,
+				D02CC229194A10A2007E01FB /* ChildrenPerStateAnalyst.swift in Sources */,
+				D07EC67F194BFDCF009AB2B3 /* String+Repetition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D02CC216194A0FD4007E01FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D02CC217194A0FD4007E01FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D02CC219194A0FD4007E01FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D02CC21A194A0FD4007E01FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D02CC20C194A0FD4007E01FB /* Build configuration list for PBXProject "Swiftogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02CC216194A0FD4007E01FB /* Debug */,
+				D02CC217194A0FD4007E01FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D02CC218194A0FD4007E01FB /* Build configuration list for PBXNativeTarget "Swiftogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02CC219194A0FD4007E01FB /* Debug */,
+				D02CC21A194A0FD4007E01FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D02CC209194A0FD4007E01FB /* Project object */;
+}
