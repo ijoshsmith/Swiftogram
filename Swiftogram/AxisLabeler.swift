@@ -12,7 +12,7 @@ sorted in the same order as the axis's `ticks` array.
 */
 class AxisLabeler
 {
-    let labels:     String[]
+    let labels:     [String]
     let labelWidth: Int
     
     init(axis: Axis)
@@ -27,9 +27,9 @@ class AxisLabeler
         return widths.count != 0 ? maxElement(widths) : 0
     }
     
-    class func _labelsForAxis(axis: Axis, _ width: Int) -> String[]
+    class func _labelsForAxis(axis: Axis, _ width: Int) -> [String]
     {
-        var labels = String[]()
+        var labels = [String]()
         for tick: AnyObject in axis.ticks
         {
             let label = "\(tick)"

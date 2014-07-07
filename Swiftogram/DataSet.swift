@@ -14,7 +14,7 @@ class DataSet
         static let State    = "state"
     }
     
-    func loadParents() -> Dictionary<String, AnyObject>[]
+    func loadParents() -> [[String : AnyObject]]
     {
         return [
             [Keys.Children: 1, Keys.State: "CT"],

@@ -9,5 +9,5 @@
 /** An object that makes data items for a histogram. */
 protocol DataAnalyst
 {
-    func analyzeDataSet(dataSet: DataSet) -> DataItem[];
+    func analyzeDataSet(dataSet: DataSet) -> [DataItem];
 }

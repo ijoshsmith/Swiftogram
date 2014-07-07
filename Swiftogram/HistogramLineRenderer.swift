@@ -11,7 +11,7 @@ Renders one line of a histogram, after the Y axis label.
 */
 class HistogramLineRenderer
 {
-    let _columnValues: Int?[]
+    let _columnValues: [Int?]
     let _textPalette:  TextPalette
     
     init(context: RenderContext)

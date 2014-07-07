@@ -8,21 +8,23 @@
 
 class ChildrenPerStateAnalyst : DataAnalyst
 {
-    func analyzeDataSet(dataSet: DataSet) -> DataItem[]
+    func analyzeDataSet(dataSet: DataSet) -> [DataItem]
     {
         let dict = _groupChildrenByState(dataSet)
-        let states = String[](dict.keys)
+        let states = [String](dict.keys)
         return states.map { DataItem(id: $0, value: dict[$0]!) }
     }
 
     func _groupChildrenByState(dataSet: DataSet)
-        -> Dictionary<String, Int>
+        -> [String : Int]
     {
-        var dict = Dictionary<String, Int>()
+        var dict = [String : Int]()
         for parent in dataSet.loadParents()
         {
-            let state  = parent[DataSet.Keys.State]? as String
-            let kids   = parent[DataSet.Keys.Children]? as Int
+            let stateObj: AnyObject? = parent[DataSet.Keys.State]
+            let kidsObj: AnyObject?  = parent[DataSet.Keys.Children]
+            let state = stateObj as String
+            let kids = kidsObj as Int
             if let sum = dict[state] {dict[state] = kids + sum}
             else                     {dict[state] = kids}
         }

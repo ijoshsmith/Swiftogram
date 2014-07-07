@@ -21,15 +21,15 @@ class Histogram
     {
         let items = analyst.analyzeDataSet(dataSet)
         _map  = Histogram._mapDataItems(items)
-        xAxis = Axis.X(items)
-        yAxis = Axis.Y(items)
+        xAxis = Axis.x(items)
+        yAxis = Axis.y(items)
     }
 
     subscript(id: AnyObject) -> Int? { return _map["\(id)"] }
     
     let _map: _DataItemMap
-    typealias _DataItemMap = Dictionary<String, Int>
-    class func _mapDataItems(items: DataItem[]) -> _DataItemMap
+    typealias _DataItemMap = [String : Int]
+    class func _mapDataItems(items: [DataItem]) -> _DataItemMap
     {
         var map = _DataItemMap()
         for item in items
