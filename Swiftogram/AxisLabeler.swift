@@ -34,7 +34,7 @@ class AxisLabeler
         {
             let label = "\(tick)"
             let padding = width - countElements(label)
-            labels += (" " * padding) + label
+            labels.append((" " * padding) + label)
         }
         return labels
     }

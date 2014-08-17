@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 iJoshSmith. All rights reserved.
 //
 
+import Foundation
+
 /** Represents the X or Y axis of a histogram. */
 class Axis
 {
@@ -34,7 +36,7 @@ class Axis
     {
         if items.isEmpty { return [] }
         let propName = property.toRaw()
-        let nsArray  = items.bridgeToObjectiveC()
+        let nsArray  = items as NSArray
         let values   = nsArray.valueForKey(propName) as [AnyObject]
         return values[0] is Int
             ? _numericTicks(values as [Int],    ascending)

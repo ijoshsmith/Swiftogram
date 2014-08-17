@@ -34,7 +34,7 @@ class HistogramLineRenderer
   
     func _cellInColumnOfValue(value: Int?, at y: Int) -> String
     {
-        return value && y <= value
+        return value != nil && y <= value
             ? _textPalette.filledCell
             : _textPalette.emptyCell
     }

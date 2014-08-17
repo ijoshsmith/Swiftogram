@@ -22,7 +22,7 @@ class ChildCountFreqAnalyst : DataAnalyst
         for kidCount in kidCounts
         {
             let occurrences = countsSet.countForObject(kidCount)
-            dataItems += DataItem(id: kidCount, value: occurrences)
+            dataItems.append(DataItem(id: kidCount, value: occurrences))
         }
         return dataItems
     }
