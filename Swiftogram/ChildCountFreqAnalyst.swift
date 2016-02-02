@@ -14,10 +14,10 @@ class ChildCountFreqAnalyst : DataAnalyst
     {
         let parents   = dataSet.loadParents() as NSArray
         let key       = DataSet.Keys.Children
-        let perParent = parents.valueForKey(key) as [AnyObject]
+        let perParent = parents.valueForKey(key) as! [AnyObject]
         let countsSet = NSCountedSet()
         countsSet.addObjectsFromArray(perParent)
-        let kidCounts = countsSet.allObjects as [Int]
+        let kidCounts = countsSet.allObjects as! [Int]
         var dataItems = [DataItem]()
         for kidCount in kidCounts
         {

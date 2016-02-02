@@ -24,7 +24,7 @@ class AxisLabeler
     class func _labelWidthForAxis(axis: Axis) -> Int
     {
         let widths = axis.ticks.map { countElements("\($0)") }
-        return widths.count != 0 ? maxElement(widths) : 0
+        return widths.count != 0 ? widths.maxElement()! : 0
     }
     
     class func _labelsForAxis(axis: Axis, _ width: Int) -> [String]

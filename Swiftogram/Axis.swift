@@ -35,7 +35,7 @@ class Axis
         _ ascending: Bool) -> [AnyObject]
     {
         if items.isEmpty { return [] }
-        let propName = property.toRaw()
+        let propName = property.rawValue
         let nsArray  = items as NSArray
         let values   = nsArray.valueForKey(propName) as [AnyObject]
         return values[0] is Int
@@ -45,12 +45,12 @@ class Axis
     
     class func _numericTicks(nums: [Int], _ asc: Bool) -> [Int]
     {
-        let range = [Int](minElement(nums)...maxElement(nums))
-        return asc ? range : range.reverse()
+        let range = [Int](nums.minElement()!...nums.maxElement()!)
+        return asc ? range : Array(range.reverse())
     }
     
     class func _textualTicks(strs: [String], _ asc: Bool) -> [String]
     {
-        return asc ? sorted(strs, <) : sorted(strs, >)
+        return asc ? strs.sort(<) : strs.sort(>)
     }
 }
