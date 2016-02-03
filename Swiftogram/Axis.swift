@@ -37,10 +37,10 @@ class Axis
         if items.isEmpty { return [] }
         let propName = property.rawValue
         let nsArray  = items as NSArray
-        let values   = nsArray.valueForKey(propName) as [AnyObject]
+        let values   = nsArray.valueForKey(propName) as! [AnyObject]
         return values[0] is Int
-            ? _numericTicks(values as [Int],    ascending)
-            : _textualTicks(values as [String], ascending)
+            ? _numericTicks(values as! [Int],    ascending)
+            : _textualTicks(values as! [String], ascending)
     }
     
     class func _numericTicks(nums: [Int], _ asc: Bool) -> [Int]
