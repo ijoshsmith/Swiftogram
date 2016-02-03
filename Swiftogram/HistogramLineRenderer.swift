@@ -24,11 +24,15 @@ class HistogramLineRenderer
     
     func renderLine(var line: String, at y: Int) -> String
     {
+        print("HLR Initial Line: ", line)
+        print("HLR renderLine...")
+        print("HLR ColumnValues: ", _columnValues)
         for value in _columnValues
         {
             line += _textPalette.columnGap
             line += _cellInColumnOfValue(value, at: y)
         }
+        print("HLR Final Line: ", line)
         return line
     }
   
