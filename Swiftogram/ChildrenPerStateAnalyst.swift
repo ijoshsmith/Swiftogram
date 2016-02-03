@@ -23,8 +23,8 @@ class ChildrenPerStateAnalyst : DataAnalyst
         {
             let stateObj: AnyObject? = parent[DataSet.Keys.State]
             let kidsObj: AnyObject?  = parent[DataSet.Keys.Children]
-            let state = stateObj as String
-            let kids = kidsObj as Int
+            let state = stateObj as! String
+            let kids = kidsObj as! Int
             if let sum = dict[state] {dict[state] = kids + sum}
             else                     {dict[state] = kids}
         }

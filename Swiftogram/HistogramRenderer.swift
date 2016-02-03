@@ -18,14 +18,14 @@ class HistogramRenderer
         let context = RenderContext(histogram: histo, glyph: _glyph)
         var lines = context.yAxisLabeler.labels + [_xAxisLine(context)]
         _renderColumns(&lines, context)
-        return join("\n", lines)
+        return lines.joinWithSeparator("\n")
     }
 
     func _xAxisLine(context: RenderContext) -> String
     {
         let palette = context.textPalette
         let labels = context.xAxisLabeler.labels
-        let labelsAndGaps = join(palette.columnGap, labels)
+        let labelsAndGaps = labels.joinWithSeparator(palette.columnGap)
         return palette.yAxisGap + palette.columnGap + labelsAndGaps
     }
     
@@ -33,9 +33,10 @@ class HistogramRenderer
     {
         var i = 0
         let lineRenderer = HistogramLineRenderer(context: context)
-        for y in context.histogram.yAxis.ticks as [Int]
+        for y in context.histogram.yAxis.ticks as! [Int]
         {
-            lines[i++] = lineRenderer.renderLine(lines[i], at: y)
+            lines[i] = lineRenderer.renderLine(lines[i], at: y)
+            i++
         }
     }
 }
