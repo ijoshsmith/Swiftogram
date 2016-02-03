@@ -23,7 +23,7 @@ class AxisLabeler
     
     class func _labelWidthForAxis(axis: Axis) -> Int
     {
-        let widths = axis.ticks.map { countElements("\($0)") }
+        let widths = axis.ticks.map { ("\($0)").characters.count }
         return widths.count != 0 ? widths.maxElement()! : 0
     }
     
@@ -33,7 +33,7 @@ class AxisLabeler
         for tick: AnyObject in axis.ticks
         {
             let label = "\(tick)"
-            let padding = width - countElements(label)
+            let padding = width - label.characters.count
             labels.append((" " * padding) + label)
         }
         return labels
